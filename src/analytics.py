@@ -20,7 +20,7 @@ def get_report_date(year=None, month=None):
     if not year:
         year = datetime.today().year  # Ano atual
     if not month:
-        month = 1  # Fevereiro como valor padrão
+        month = 2  # Mês de consulta
 
     _, last_day = calendar.monthrange(year, month)
 
@@ -32,7 +32,7 @@ def get_report_date(year=None, month=None):
 properties = read_properties("propiedades.txt")
 
 year = 2025  # Ano de 2025
-month = 1  # Fevereiro (mude para o mês desejado)
+month = 2  # Mês de consulta
 
 start_date, end_date = get_report_date(year, month)
 

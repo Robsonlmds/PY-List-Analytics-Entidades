@@ -26,8 +26,8 @@ def processar_arquivo(input_file, output_file):
         for resultado in resultados:
             file.write(resultado + '\n')
 
-input_file = 'resultados-final.txt'
-output_file = 'resultados-final-1.txt'
+input_file = 'resultados'
+output_file = 'resultados-final'
 processar_arquivo(input_file, output_file)
 
 print(f"Os resultados foram gravados no arquivo {output_file}.")
